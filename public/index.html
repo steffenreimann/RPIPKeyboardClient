@@ -5,10 +5,108 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+
+    <div class="input-group mb-3">
+        <input class="input-group-text" id="profileNameInput">
+        <select class="form-control" id="windowSelect">
+            <option></option>
+        </select>
+        <button class="btn btn-outline-primary" onclick="window.newProfile()">New Profile</button>
+        <button class="visually-hidden-focusable" onclick="window.getNextActiveWindow()">Scan Window</button>
+
+    </div>
+
+
+    <div class="input-group mb-3">
+        <div class="form-control form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="autoSwitchProfile" checked>
+            <label class="form-check-label" for="flexSwitchCheckDefault">Auto Switch Profile</label>
+        </div>
+        
+        <select class="form-control" id="profileSelect">
+            <option></option>
+        </select>
+    
+        <button  class="btn btn-outline-primary" onclick="useProfile()">Use Profile</button>
+        
+
+
+
+    </div>
+
+
+
+
+    <p class="visually-hidden-focusable" id="profileID"></p>
+
+    <div class="input-group mb-3">
+        <input class="input-group-text" id="profileNameInput1">
+        <select class="form-control" id="profileWindowSelect">
+            <option></option>
+        </select>
+        <button class="btn btn-outline-primary" onclick="window.removeProfile()">Löschen</button>
+        <button class="btn btn-outline-primary" onclick="saveProfile()">Speichern</button>
+
+    </div>
+
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Pin</th>
+                <th scope="col">Key</th>
+                <th scope="col">Name</th>
+                <th scope="col"></th>
+            </tr>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">
+                    <div id="newKeyGPIOInputDiv"></div>
+                </th>
+                <th scope="col"><input class="form-control btn-dark" id="newKeyCodeInput" value="RIGHT_ARROW" onclick="keyCode(event)" onkeydown="keyCode(event)"></th>
+                <th scope="col"><input class="form-control btn-dark" id="newKeyNameInput" value="Name"></th>
+                <th scope="col"><button class="btn btn-dark" onclick="newKey()">Add Key</button></th>
+            </tr>
+        </thead>
+        <tbody id="keys">
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--     <div id="keys">
+
+
+    </div> -->
+
+
+    <template id="tableTemp">
+
+    </template>
+=======
     <div style="position: relative; top: 50%; text-align: center;font-size: xxx-large;font-family: system-ui;  -ms-transform: translateY(-50%); transform: translateY(-50%);">
         Welcome, the electron app is running!
         <div style="font-size: xx-large" id="testFuncCall">Press CTRL+S or TestFunctionCall in Edit Menu</div>
     </div>
+>>>>>>> parent of 68c0aac (+)
 </body>
 
 </html>
