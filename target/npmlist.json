@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"electronexample","dependencies":{"active-window":{"version":"0.1.0"},"drivelist":{"version":"11.0.4"},"easy-nodejs-app-settings":{"version":"0.0.32"},"fs-extra":{"version":"10.1.0"},"node-window-manager":{"version":"2.2.4"},"serialport":{"version":"10.4.0"},"uuid":{"version":"9.0.0"}}}

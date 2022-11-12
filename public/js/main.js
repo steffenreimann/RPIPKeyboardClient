@@ -219,7 +219,7 @@ function renderGPIOSelect(id) {
     var select = document.createElement("select");
     select.className = 'form-select btn-dark'
     select.id = id || ''
-    for (var i of gpio) {
+    for (var i of window.ConfigFile.data.gpio) {
         //console.log(i);
         var option = document.createElement("option");
         option.value = i.pin;
@@ -227,8 +227,6 @@ function renderGPIOSelect(id) {
         select.appendChild(option);
     }
     //select.onchange = window.GPIOSelectorHandle
-
-
     // = window.GPIOSelectorHandle;
 
     return select

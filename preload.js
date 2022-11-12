@@ -1,5 +1,4 @@
 var ipcRenderer = require('electron').ipcRenderer;
-<<<<<<< HEAD
 window.monitor = require('active-window');
 const fm = require('easy-nodejs-app-settings');
 const drivelist = require('drivelist');
@@ -41,15 +40,12 @@ const {
 //Get the current active window
 
 
-=======
->>>>>>> parent of 68c0aac (+)
 
 window.TestEvent = async function (data) {
     const result = await ipcRenderer.invoke('TestEvent', data);
     console.log('TestEvent return ', result);
 }
 
-<<<<<<< HEAD
 window.counter = {}
 
 ipcRenderer.on('serialdata', function (event, data) {
@@ -541,9 +537,8 @@ window.flashCode = async function () {
 
 //addEventListener('DOMContentLoaded', init());
 init()
-=======
+
 ipcRenderer.on('TestEvent', function (event, data) {
     console.log('TestEvent ', data);
     document.getElementById('testFuncCall').innerText = `Button was pressed ${data} times`
 });
->>>>>>> parent of 68c0aac (+)

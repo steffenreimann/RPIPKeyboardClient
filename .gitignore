@@ -105,4 +105,3 @@ dist
 
 # release-builds
 .release-builds/
-release-builds/*
