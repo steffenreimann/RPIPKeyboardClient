@@ -5,6 +5,9 @@
 </head>
 
 <body>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
 
     <div class="input-group mb-3">
         <input class="input-group-text" id="profileNameInput">
@@ -16,26 +19,19 @@
 
     </div>
 
-
     <div class="input-group mb-3">
         <div class="form-control form-check form-switch">
             <input class="form-check-input" type="checkbox" id="autoSwitchProfile" checked>
             <label class="form-check-label" for="flexSwitchCheckDefault">Auto Switch Profile</label>
         </div>
-        
+
         <select class="form-control" id="profileSelect">
             <option></option>
         </select>
-    
-        <button  class="btn btn-outline-primary" onclick="useProfile()">Use Profile</button>
-        
 
-
+        <button class="btn btn-outline-primary" onclick="useProfile()">Use Profile</button>
 
     </div>
-
-
-
 
     <p class="visually-hidden-focusable" id="profileID"></p>
 
@@ -48,7 +44,6 @@
         <button class="btn btn-outline-primary" onclick="saveProfile()">Speichern</button>
 
     </div>
-
 
     <table class="table table-dark">
         <thead>
@@ -72,7 +67,7 @@
             </tr>
         </thead>
         <tbody id="keys">
-            <tr>
+            <!--             <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
@@ -85,27 +80,75 @@
                 <td>@fat</td>
             </tr>
             <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
+                <th scope="row"></th>
+                <td colspan="2"></td>
                 <td>@twitter</td>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
-    <!--     <div id="keys">
+    <div id="keys">
+    </div>
 
 
-    </div> -->
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Board Pins Bearbeiten</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">GPIO</th>
+                                <th scope="col">Name</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="keys">
+                            <div id="boardPins"></div>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <template id="tableTemp">
 
     </template>
-    <div style="position: relative; top: 50%; text-align: center;font-size: xxx-large;font-family: system-ui;  -ms-transform: translateY(-50%); transform: translateY(-50%);">
-        Welcome, the electron app is running!
-        <div style="font-size: xx-large" id="testFuncCall">Press CTRL+S or TestFunctionCall in Edit Menu</div>
-    </div>
+
+    <template id="boardPinTemp">
+        <tr>
+            <th scope="row"></th>
+            <td id="gpio">Mark</td>
+            <td id="name">Otto</td>
+        </tr>
+    </template>
+
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 
 </body>

@@ -15,7 +15,7 @@ function renderWindowsSelector() {
     profileWindowSelect.innerHTML = "";
 
     for (var i in wins) {
-        console.log(i);
+        //console.log(i);
         var option = document.createElement("option");
         option.value = i;
         option.innerText = i;

@@ -537,8 +537,3 @@ window.flashCode = async function () {
 
 //addEventListener('DOMContentLoaded', init());
 init()
-
-ipcRenderer.on('TestEvent', function (event, data) {
-    console.log('TestEvent ', data);
-    document.getElementById('testFuncCall').innerText = `Button was pressed ${data} times`
-});
