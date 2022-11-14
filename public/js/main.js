@@ -205,8 +205,9 @@ function useProfile(index) {
 function keyCode(event) {
     event.preventDefault();
 
+    console.log(window.codes);
     console.log(event);
-    console.log(event.keyCode.toString(16));
+    //console.log(event.keyCode.toString(16));
     console.log(event.code);
     console.log(codes[event.code]);
     event.srcElement.value = codes[event.code].code

@@ -1,0 +1,11 @@
+.bot_container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    background-color: #6c757d;
+    /* margin: 10px; */
+    padding: 10;
+
+}

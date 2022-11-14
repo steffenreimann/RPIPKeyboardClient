@@ -7,6 +7,7 @@ window.windows = {};
 //var fs = require('fs');
 var fs = require("fs-extra");
 var path = require('path');
+window.codes = require('./keycodes.json');
 var windowFind = false;
 const {
     v4: uuidv4
@@ -14,7 +15,7 @@ const {
 const {
     windowManager
 } = require("node-window-manager");
-
+console.log('window.codes: ',window.codes);
 /*Watch the active window 
   @callback
   @number of requests; infinity = -1 
